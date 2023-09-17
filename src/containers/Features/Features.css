@@ -1,0 +1,25 @@
+.gpt3__features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    /* gap: 2rem; */
+}
+
+.gpt3__features_heading h1{
+    width: 100%;
+    max-width: 426px;
+
+}
+
+.gpt3__features_heading p{
+    color: var(--color-subtext);
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1024px){
+    .gpt3__features{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        margin-top: 4rem;
+    }
+}

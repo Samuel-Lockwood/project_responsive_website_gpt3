@@ -1,0 +1,50 @@
+.gpt3__register_container{
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gpt3__register_text p{
+    color: #0E0E0E;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.gpt3__register_text h2{
+    color: #000;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: .2rem;
+}
+
+.gpt3__register_button button{
+    padding: 1rem 1.5rem;
+    border-radius: 4rem;
+    background-color: #000;
+    color: #fff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .gpt3__register_container{
+        padding: 1rem;
+        justify-content: center;
+        text-align: center;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .gpt3__register_text h2{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,108 @@
+.gpt3__footer{
+    background-color: var(--color-footer);
+}
+
+.gpt3__footer_heading{
+    text-align: center;
+}
+
+.gpt3__footer_heading h1{
+    font-size: 43px;
+}
+
+.gpt3__footer_heading button{
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    margin-top: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gpt3__footer_logo img{
+    width: 90px;
+    height: 30px;
+
+}
+
+.gpt3__footer_logo p{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: .2rem;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+}
+
+.gpt3__footer_links_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    
+    padding:5rem 0 0 0;
+}
+
+.gpt3__footer_links_container h4{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    letter-spacing: 0.05em;
+    
+}
+
+.gpt3__footer_links_container p{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: .5rem 0;
+}
+
+.gpt3__footer_copy{
+    text-align: center;   
+}
+
+.gpt3__footer_copy p{
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 1150px){
+    .gpt3__footer_links_container{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .gpt3__footer_links_container{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        row-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .gpt3__footer_links_container{
+        grid-template-columns: 1fr;
+    }
+
+    .gpt3__footer_heading h1{
+        font-size: 35px;
+    }
+
+    .gpt3__footer{
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .gpt3__footer_heading h1{
+        font-size: 30px;
+    }
+}

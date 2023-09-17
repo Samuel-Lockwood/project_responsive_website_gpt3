@@ -1,0 +1,121 @@
+.gpt3__header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gpt3__header_content h1{
+    font-size: 45px;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.gpt3__header_content p{
+    color: #81AFDD;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.04em;
+}
+
+.gpt3__header_form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.gpt3__header_form input{
+    width: 100%;
+    height: 44px;
+    background: #052D56;
+    border-radius: 5px 0px 0px 5px;
+    padding: 1rem;
+    color: #81AFDD;
+}
+
+.gpt3__header_form button{
+    width: 30%;
+    height: 44px;
+    background: #FF4820;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.gpt3__header_people{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.gpt3__header_people span{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 1150px){
+    .gpt3__header_content h1{
+        font-size: 40px;
+    }
+
+    .gpt3__header_content p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .gpt3__header{
+        grid-template-columns: 1fr;
+        row-gap: 3.5rem;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gpt3__header_content h1{
+        font-size: 35px;
+    }
+
+    .gpt3__header_content p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .gpt3__header_content h1{
+        font-size: 30px;
+    }
+
+    .gpt3__header_content p{
+        font-size: 12px;
+    }
+
+    .gpt3__header_people span{
+        font-size: 12px;
+    }
+
+    .gpt3__header_form{
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    .gpt3__header_form button{
+        width: 100%;
+    }
+
+    .gpt3__header_people{
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .gpt3__header_content p{
+        font-size: 10px;
+    }
+}
+
+
